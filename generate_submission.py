@@ -47,7 +47,7 @@ def process_and_save(test_csv_path, output_csv_path):
         start_index = last_processed_index + 1
         results = existing_df.to_dict('records')
     else:
-        start_index = 116933
+        start_index = 0
         results = []
 
     for index, row in df.iloc[start_index:].iterrows():
@@ -81,7 +81,7 @@ def process_and_save(test_csv_path, output_csv_path):
 
 def main():
     test_csv_path = 'test.csv'  # Update this path to your test.csv location
-    output_csv_path = 'submission4.csv'
+    output_csv_path = 'submission.csv'
     process_and_save(test_csv_path, output_csv_path)
 
 
